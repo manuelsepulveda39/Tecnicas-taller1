@@ -95,7 +95,7 @@ const App = () => {
             <CostCalculator totalCost={handleTotalCost} />
             <p>Total costos de personal: ${totalCost}</p>
           </div>
-          <h4>En la ETAPA 1 (COSTOS) de su proyecto, se ha invertido un total de:</h4>
+          <h4>En Componentes de COSTOS de su proyecto, se estima un total de:</h4>
           <p>${totalCostos}</p>
         </div>
       </div>
@@ -103,7 +103,7 @@ const App = () => {
       <div className="contenido">
         <div className="margen">
           <Gastos totalGastos={handleTotalGastos} />
-          <h4>En la ETAPA 2 (GASTOS) de su proyecto, se ha invertido un total de:</h4>
+          <h4>En componentes de GASTOS de su proyecto, se estima un total de:</h4>
           <p> ${totalGastos}</p>
         </div>
       </div>
@@ -111,7 +111,7 @@ const App = () => {
       <div className="contenido">
         <div className="margen">
           <Riesgos totalRiesgos={handleTotalRiesgos} />
-          <h4>En la ETAPA 3 (RIESGOS) de su proyecto, se ha invertido un total de: </h4>
+          <h4>En componentes RIESGOS de su proyecto, se estima un total de: </h4>
           <p>${totalRiesgos}</p>
         </div>
       </div>
@@ -120,7 +120,7 @@ const App = () => {
         <div className="margen">
           <h2>Ganancias</h2>
           <label>
-            Basándonos en las inversiones realizadas en las tres etapas anteriores, ¿qué porcentaje de ganancias desea obtener de dicha inversión?
+            ¿qué porcentaje de ganancias desea obtener por la realizacion del proyecto?
             <br />
             <input type="number" value={gananciaPorcentaje} onChange={handleGananciaPorcentaje} />
           </label>
