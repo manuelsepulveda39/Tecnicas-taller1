@@ -1,0 +1,43 @@
+h1 {
+    color: black;
+    background-color: #77B1FF;
+    padding: 20px;
+    text-align: center;
+  }
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #e05757;
+    margin: 20px 0;
+}
+input[type="number"]{
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    width: 10%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.833);
+    color: black;
+    font-size: 12px;
+    border-radius: 2px;
+  }
+.contenido{
+    margin-top:5%;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: #c2daee;
+}
+.margen{
+    margin-top:2%;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+p {
+    color: rgb(0, 0, 0);
+    margin-top: 2%;
+    font-size: 16px;
+    margin-bottom: 1%;
+    font-weight: bold;
+  }

@@ -16,7 +16,8 @@ const Riesgos = ({ totalRiesgos }) => {
       <h2>Riesgos</h2>
       <div>
         <label>
-          Valor de los riesgos:
+          Todo negocio necesita un fondo para contingencias o imprevistos. ¿Cuánto le gustaría destinar a este propósito?
+          <br />
           <input type="number" value={valorRiesgos} onChange={handleRiesgos} />
         </label>
       </div>

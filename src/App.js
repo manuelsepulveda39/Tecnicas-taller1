@@ -1,3 +1,4 @@
+import "./main.css";
 import React, { useState, useEffect } from "react";
 import AmbienteTrabajo from "./Componentes/AmbienteTrabajo/AmbienteTrabajo";
 import CostCalculator from './Componentes/CostCalculator';
@@ -82,63 +83,81 @@ const App = () => {
   return (
     <div>
       <h1>Calculadora de costeos de software</h1>
-      <div>
-        <h2>Costos</h2>
-        <div>
-          <AmbienteTrabajo total={totalAmbi} setTotalAmbi={handleTotalAmbi} />
-          <p>Total Ambiente Trabajo: ${totalAmbi}</p>
-        </div>
-        <div>
-          <CostCalculator totalCost={handleTotalCost} />
-          <p>Total costos de personal: ${totalCost}</p>
-        </div>
-        <h3>Total Costos:</h3>
-        <p>${totalCostos}</p>
-      </div>
-      <hr />
-      <div>
-        <Gastos totalGastos={handleTotalGastos} />
-        <p>Total Gastos: ${totalGastos}</p>
-      </div>
-      <hr />
-      <div>
-        <Riesgos totalRiesgos={handleTotalRiesgos} />
-        <p>Total Riesgos: ${totalRiesgos}</p>
-      </div>
-      <hr />
-      <div>
-        <h2>Ganancias</h2>
-        <label>
-          Porcentaje de Ganancia:
-          <input type="number" value={gananciaPorcentaje} onChange={handleGananciaPorcentaje} />
-        </label>
-        <p>Ganancia: ${ganancia}</p>
-      </div>
-      <hr />
-      <div>
-        <h3>Total sin Impuestos:</h3>
-        <p>${totalSinImpuestos}</p>
-      </div>
-      <hr />
-      <div>
-        <h2>Impuestos</h2>
-        <div>
-          <h3>RTI (Retención en la fuente sobre ingresos laborales):</h3>
-          <p>${rti}</p>
-        </div>
-        <div>
-          <h3>Reteica (Retención en la fuente sobre ingresos de industria y comercio):</h3>
-          <p>${reteica}</p>
-        </div>
-        <div>
-          <h3>IVA (Impuesto al Valor Agregado):</h3>
-          <p>${iva}</p>
+      <div className="contenido">
+        <div className="margen">
+          <h2>Costos</h2>
+          <hr/>
+          <div>
+            <AmbienteTrabajo total={totalAmbi} setTotalAmbi={handleTotalAmbi} />
+            <p>Total Ambiente Trabajo: ${totalAmbi}</p>
+          </div>
+          <div>
+            <CostCalculator totalCost={handleTotalCost} />
+            <p>Total costos de personal: ${totalCost}</p>
+          </div>
+          <h4>En la ETAPA 1 (COSTOS) de su proyecto, se ha invertido un total de:</h4>
+          <p>${totalCostos}</p>
         </div>
       </div>
       <hr />
-      <div>
-        <h2>Total:</h2>
-        <p>${total}</p>
+      <div className="contenido">
+        <div className="margen">
+          <Gastos totalGastos={handleTotalGastos} />
+          <h4>En la ETAPA 2 (GASTOS) de su proyecto, se ha invertido un total de:</h4>
+          <p> ${totalGastos}</p>
+        </div>
+      </div>
+      <hr />
+      <div className="contenido">
+        <div className="margen">
+          <Riesgos totalRiesgos={handleTotalRiesgos} />
+          <h4>En la ETAPA 3 (RIESGOS) de su proyecto, se ha invertido un total de: </h4>
+          <p>${totalRiesgos}</p>
+        </div>
+      </div>
+      <hr />
+      <div className="contenido">
+        <div className="margen">
+          <h2>Ganancias</h2>
+          <label>
+            Basándonos en las inversiones realizadas en las tres etapas anteriores, ¿qué porcentaje de ganancias desea obtener de dicha inversión?
+            <br />
+            <input type="number" value={gananciaPorcentaje} onChange={handleGananciaPorcentaje} />
+          </label>
+          <p>Ganancia: ${ganancia}</p>
+        </div>
+      </div>
+      <hr />
+      <div className="contenido">
+        <div className="margen">
+          <h3>Total sin Impuestos:</h3>
+          <p>${totalSinImpuestos}</p>
+        </div>
+      </div>
+      <hr />
+      <div className="contenido">
+        <div className="margen">
+          <h2>Impuestos</h2>
+          <div>
+            <h3>RTI (Retención en la fuente sobre ingresos laborales):</h3>
+            <p>${rti}</p>
+          </div>
+          <div>
+            <h3>Reteica (Retención en la fuente sobre ingresos de industria y comercio):</h3>
+            <p>${reteica}</p>
+          </div>
+          <div>
+            <h3>IVA (Impuesto al Valor Agregado):</h3>
+            <p>${iva}</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="contenido">
+        <div className="margen">
+          <h2>Total:</h2>
+          <p>${total}</p>
+        </div>
       </div>
     </div>
   );

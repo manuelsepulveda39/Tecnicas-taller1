@@ -22,6 +22,7 @@ const Teletrabajo = ({ updateTotal }) => {
             <h4>Teletrabajo</h4>
             <label>
                 Mantenimiento de computadores:
+                <br />
                 <input
                     type="number"
                     value={mantenimiento}
@@ -31,6 +32,7 @@ const Teletrabajo = ({ updateTotal }) => {
             <br />
             <label>
                 Otros gastos:
+                <br />
                 <input
                     type="number"
                     value={otrosGastos}

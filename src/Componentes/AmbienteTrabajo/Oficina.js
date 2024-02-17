@@ -32,26 +32,26 @@ const Oficina = ({ updateTotal }) => {
     <div>
       <h4>Oficina</h4>
       <label>
-        Arriendo mensual:
+        Arriendo mensual: 
+        <br/>
         <input type="number" value={arriendo} onChange={handleArriendo} />
       </label>
       <br />
       <label>
         Gastos en servicios:
+        <br />
         <input type="number" value={servicios} onChange={handleServicios} />
       </label>
       <br />
       <label>
         Mantenimiento de computadores:
-        <input
-          type="number"
-          value={mantenimiento}
-          onChange={handleMantenimiento}
-        />
+        <br />
+        <input type="number" value={mantenimiento} onChange={handleMantenimiento} />
       </label>
       <br />
       <label>
         Otros:
+        <br />
         <input type="number" value={otros} onChange={handleOtros} />
       </label>
     </div>

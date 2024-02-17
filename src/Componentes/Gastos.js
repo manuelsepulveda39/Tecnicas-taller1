@@ -22,13 +22,15 @@ const Gastos = ({ totalGastos }) => {
       <h2>Gastos</h2>
       <div>
         <label>
-          Costo del contador al mes:
+          Su empresa necesita un contador para manejar la información financiera. Proporcione el valor que tiene en mente y encontraremos uno en el mercado:
+          <br />
           <input type="number" value={contadorMes} onChange={handleContadorMesChange} />
         </label>
       </div>
       <div>
         <label>
           Otros gastos:
+          <br />
           <input type="number" value={otrosGastos} onChange={handleOtrosGastosChange} />
         </label>
       </div>

@@ -16,25 +16,29 @@ const CostCalculator = ({ totalCost }) => {
       <h3>Costos personal</h3>
       <div>
         <label>
-          Numero de trabajadores:
+          ¿Cuántas personas desea contratar?
+          <br />
           <input type="number" value={numPersonas} onChange={e => setNumPersonas(parseInt(e.target.value))} />
         </label>
       </div>
       <div>
         <label>
-          Horas por dia:
+          Por favor, introduzca las horas diarias de trabajo por empleado:
+          <br />
           <input type="number" value={horasPorDia} onChange={e => setHorasPorDia(parseInt(e.target.value))} />
         </label>
       </div>
       <div>
         <label>
-          Numero de dias:
+          Por favor, introduzca la duración (en días) de su proyecto:
+          <br />
           <input type="number" value={numDias} onChange={e => setNumDias(parseInt(e.target.value))} />
         </label>
       </div>
       <div>
         <label>
-          Pago por hora:
+          ¿Cuál es la tarifa por hora de los empleados?
+          <br />
           <input type="number" value={costoHora} onChange={e => setCostoHora(parseFloat(e.target.value))} />
         </label>
       </div>
